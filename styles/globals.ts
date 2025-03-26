@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 import { Theme } from "@/context/ThemeProvider";
 
 const stylesGlobal = (theme: Theme) => {
-  const colors = theme.colors
+  const colors = theme.colors;
   return {
     container: {
       flex: 0.7,
@@ -24,12 +24,12 @@ const stylesGlobal = (theme: Theme) => {
       elevation: 3, // Sombra en Android
       marginBottom: 15,
     },
-    bottomSheet:{
+    bottomSheet: {
       shadowColor: colors.text,
       shadowOffset: { width: 2, height: 2 },
       shadowOpacity: 0.2,
       elevation: 5,
-    }
+    },
   };
 };
 

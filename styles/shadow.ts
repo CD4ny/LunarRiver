@@ -1,8 +1,8 @@
 import { Theme } from "@/context/ThemeProvider";
 import { StyleSheet } from "react-native";
 
-const shadows = (theme:Theme) => {
-    const shadowColor = theme.colors.text;
+const shadows = (theme: Theme) => {
+  const shadowColor = theme.colors.text;
   return StyleSheet.create({
     smallTextShadow: {
       shadowColor: shadowColor,

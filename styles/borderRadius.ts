@@ -11,8 +11,7 @@ const radius = StyleSheet.create({
     alignItems: "center",
   },
   input: {
-    padding: 12,
-    borderRadius: 12,
+    borderRadius: 15,
     borderWidth: 1,
   },
   card: {

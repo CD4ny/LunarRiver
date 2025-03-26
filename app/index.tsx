@@ -1,10 +1,11 @@
 // import { Colors } from "@/constants/Colors";
 import { useTheme } from "@/context/ThemeProvider";
 import Button from "@/styled-components/Button";
+import InputText from "@/styled-components/InputText";
 import radius from "@/styles/borderRadius";
 import stylesGlobal from "@/styles/globals";
 
-import { Text, TextInput, TouchableOpacity, View } from "react-native";
+import { View } from "react-native";
 
 export default function Index() {
   const { theme, isDarkMode, toggleTheme } = useTheme();
@@ -18,9 +19,13 @@ export default function Index() {
         justifyContent: "flex-end",
       }}
     >
-      <View style={[styles.container,styles.bottomSheet, radius.bottomSheet]}>
+      <View style={[styles.container, styles.bottomSheet, radius.bottomSheet]}>
+        <View>
+          <InputText name='as'/>
+          <InputText />
+        </View>
         <Button onPress={toggleTheme} color="error">
-            sads
+          sads
         </Button>
       </View>
     </View>

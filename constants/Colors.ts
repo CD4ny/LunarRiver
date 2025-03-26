@@ -1,4 +1,52 @@
 export const Palette = {
+  russian_violet: {
+    DEFAULT: "#251351",
+    100: "#070411",
+    200: "#0f0821",
+    300: "#160c32",
+    400: "#1e1042",
+    500: "#251351",
+    600: "#432395",
+    700: "#6439d0",
+    800: "#977be0",
+    900: "#cbbdef",
+  },
+  light_red: {
+    DEFAULT: "#ff7477",
+    100: "#4a0001",
+    200: "#950002",
+    300: "#df0004",
+    400: "#ff2b2e",
+    500: "#ff7477",
+    600: "#ff9193",
+    700: "#ffacae",
+    800: "#ffc8c9",
+    900: "#ffe3e4",
+  },
+  oxford_blue: {
+    DEFAULT: "#040926",
+    100: "#010207",
+    200: "#02040f",
+    300: "#020516",
+    400: "#03071e",
+    500: "#040926",
+    600: "#0d1d7a",
+    700: "#1631cf",
+    800: "#556ced",
+    900: "#aab5f6",
+  },
+  slate_gray: {
+    DEFAULT: "#767b91",
+    100: "#18191d",
+    200: "#2f313b",
+    300: "#474a58",
+    400: "#5e6376",
+    500: "#767b91",
+    600: "#9296a8",
+    700: "#adb0be",
+    800: "#c9cbd3",
+    900: "#e4e5e9",
+  },
   snow: {
     DEFAULT: "#fffafb",
     100: "#650014",
@@ -87,22 +135,23 @@ export const Palette = {
 } as const;
 
 export const Dark = {
-  primary: Palette.argentinian_blue[200], //"#005089"
-  secondary: Palette.marian_blue[200], //"#0c1737"
-  surface: Palette.rich_black[300], //"#010d18"
-  background: Palette.rich_black[500], //"#011627"
+  primary: Palette.russian_violet[800], //"#432395"
+  secondary: Palette.light_red[500], //"#950002"
+  surface: Palette.slate_gray[300], //"#2f313b"
+  background: Palette.slate_gray[100], //"#18191d"
   success: Palette.asparagus[300], //"#4b6e3a"
   error: Palette.chili_red[400], //"#a22f1e"
   warning: Palette.sandy_brown[200], //"#834708"
   text: Palette.snow[900], //"#fffefe"
 };
 export const Light = {
-  primary: Palette.argentinian_blue[700], //"#9ad5ff"
-  secondary: Palette.marian_blue[700], //"#5778da"
-  surface: Palette.rich_black[800], //"#48aafa"
+  primary: Palette.russian_violet[700], //"#977be0"
+  secondary: Palette.light_red[700], //"#ffacae"
+  surface: Palette.slate_gray[700], //"#adb0be"
   background: Palette.snow[600], //"#fffbfc"
   success: Palette.asparagus[600], //"#b2cfa5"
-  error: Palette.chili_red[600], //"#dd5c48"
+  error: Palette.chili_red[700], //"#e68576"
   warning: Palette.sandy_brown[600], //"#f8c084"
-  text: Palette.rich_black[500], //"#011627"
+  text: Palette.slate_gray[100], //"#18191d"
 };
+ 

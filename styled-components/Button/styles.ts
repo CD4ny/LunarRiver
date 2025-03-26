@@ -1,9 +1,11 @@
 import { Theme } from "@/context/ThemeProvider";
 import { StyleSheet, ViewStyle } from "react-native";
 
-const styles = (theme: Theme,color:'primary'|'secondary'|'warning'|'success'|'error') => {
-
-    const colors = theme.colors;
+const styles = (
+  theme: Theme,
+  color: "primary" | "secondary" | "warning" | "success" | "error"
+) => {
+  const colors = theme.colors;
 
   return StyleSheet.create({
     button: {
@@ -17,7 +19,7 @@ const styles = (theme: Theme,color:'primary'|'secondary'|'warning'|'success'|'er
     },
 
     fill: {
-      backgroundColor:colors[color],
+      backgroundColor: colors[color],
       shadowColor: colors.text,
       shadowOffset: { width: 2, height: 2 },
       shadowOpacity: 0.2,
@@ -34,9 +36,14 @@ const styles = (theme: Theme,color:'primary'|'secondary'|'warning'|'success'|'er
     },
 
     text: {
-      fontSize: 18,
+      fontSize: 20,
       fontWeight: "bold",
-      color: "#fff",
+      color: colors.text,
+      shadowColor: colors.background,
+      shadowOffset: { width: 0, height: 1 },
+      shadowOpacity: 0.1,
+      shadowRadius: 2,
+      elevation: 1,
     },
 
     textOutlined: {
