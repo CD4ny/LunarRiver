@@ -1,8 +1,8 @@
 // import { Colors } from "@/constants/Colors";
-import { ThemeProvider, useTheme } from "@/context/ThemeProvider";
-import { Stack } from "expo-router";
-import { useEffect } from "react";
-import { StatusBar } from "react-native";
+import { ThemeProvider, useTheme } from '@/context/ThemeProvider';
+import { Stack } from 'expo-router';
+import { useEffect } from 'react';
+import { StatusBar } from 'react-native';
 
 export default function RootLayout() {
   return (
@@ -17,10 +17,10 @@ function MainStack() {
   const colors = theme.colors;
   useEffect(() => {
     if (isDarkMode) {
-      StatusBar.setBarStyle("light-content");
+      StatusBar.setBarStyle('light-content');
       StatusBar.setBackgroundColor(colors.primary); // Ensure this matches your theme
     } else {
-      StatusBar.setBarStyle("dark-content");
+      StatusBar.setBarStyle('dark-content');
       StatusBar.setBackgroundColor(colors.primary);
     }
   }, [isDarkMode, colors.primary]);

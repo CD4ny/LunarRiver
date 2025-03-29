@@ -1,0 +1,9 @@
+{
+    "extends": [
+      "airbnb-base", // Use "airbnb" if you're working with React
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "prettier/prettier": ["error"]
+    }
+  }

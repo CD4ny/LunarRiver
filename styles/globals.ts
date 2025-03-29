@@ -1,5 +1,5 @@
-import { StyleSheet } from "react-native";
-import { Theme } from "@/context/ThemeProvider";
+import { StyleSheet } from 'react-native';
+import { Theme } from '@/context/ThemeProvider';
 
 const stylesGlobal = (theme: Theme) => {
   const colors = theme.colors;
@@ -10,14 +10,14 @@ const stylesGlobal = (theme: Theme) => {
       backgroundColor: colors.background,
     },
     input: {
-      width: "100%",
+      width: '100%',
       padding: 12,
       borderWidth: 1,
-      borderColor: "#ddd",
+      borderColor: '#ddd',
       borderRadius: 10,
       fontSize: 16,
-      backgroundColor: "#fff",
-      shadowColor: "#000",
+      backgroundColor: '#fff',
+      shadowColor: '#000',
       shadowOffset: { width: 2, height: 2 },
       shadowOpacity: 0.1,
       shadowRadius: 5,

@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 const radius = StyleSheet.create({
   bottomSheet: {
@@ -8,7 +8,7 @@ const radius = StyleSheet.create({
   button: {
     padding: 15,
     borderRadius: 25,
-    alignItems: "center",
+    alignItems: 'center',
   },
   input: {
     borderRadius: 15,
@@ -35,16 +35,16 @@ const radius = StyleSheet.create({
     height: 24,
     borderRadius: 12, // 50% del tamaño
     borderWidth: 2,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   checkbox: {
     width: 20,
     height: 20,
     borderRadius: 8,
     borderWidth: 2,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
 

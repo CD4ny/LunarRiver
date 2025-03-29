@@ -1,20 +1,20 @@
-import { Theme } from "@/context/ThemeProvider";
-import { StyleSheet, ViewStyle } from "react-native";
+import { Theme } from '@/context/ThemeProvider';
+import { StyleSheet, ViewStyle } from 'react-native';
 
 const styles = (
   theme: Theme,
-  color: "primary" | "secondary" | "warning" | "success" | "error"
+  color: 'primary' | 'secondary' | 'warning' | 'success' | 'error'
 ) => {
   const colors = theme.colors;
 
   return StyleSheet.create({
     button: {
-      width: "100%",
+      width: '100%',
       paddingVertical: 14,
       borderRadius: 25,
-      alignItems: "center",
-      justifyContent: "center",
-      flexDirection: "row",
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'row',
       gap: 10,
     },
 
@@ -27,17 +27,17 @@ const styles = (
     },
 
     outlined: {
-      backgroundColor: "transparent",
+      backgroundColor: 'transparent',
       borderWidth: 2,
     },
 
     ghost: {
-      backgroundColor: "transparent",
+      backgroundColor: 'transparent',
     },
 
     text: {
       fontSize: 20,
-      fontWeight: "bold",
+      fontWeight: 'bold',
       color: colors.text,
       shadowColor: colors.background,
       shadowOffset: { width: 0, height: 1 },
