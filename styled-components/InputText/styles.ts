@@ -3,7 +3,13 @@ import { StyleSheet } from 'react-native';
 
 const stylesInputText = (
   theme: Theme,
-  color: 'primary' | 'secondary' | 'warning' | 'success' | 'error' | 'text',
+  color:
+    | 'primary'
+    | 'secondary'
+    | 'warning'
+    | 'success'
+    | 'error'
+    | 'text',
   background:
     | 'primary'
     | 'secondary'

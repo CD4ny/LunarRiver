@@ -3,7 +3,12 @@ import { StyleSheet, ViewStyle } from 'react-native';
 
 const styles = (
   theme: Theme,
-  color: 'primary' | 'secondary' | 'warning' | 'success' | 'error'
+  color:
+    | 'primary'
+    | 'secondary'
+    | 'warning'
+    | 'success'
+    | 'error'
 ) => {
   const colors = theme.colors;
 

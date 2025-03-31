@@ -1,11 +1,17 @@
 import { useTheme } from '@/context/ThemeProvider';
-import { StyleSheet, Text, View, TextInput } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  TextInput,
+} from 'react-native';
 import stylesInputText from './styles';
 import radius from '@/styles/borderRadius';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { useState } from 'react';
 
-type IconName = keyof typeof MaterialCommunityIcons.glyphMap;
+type IconName =
+  keyof typeof MaterialCommunityIcons.glyphMap;
 
 interface Props {
   name?: string;
@@ -19,7 +25,13 @@ interface Props {
     | 'error'
     | 'surface'
     | 'background';
-  color?: 'primary' | 'secondary' | 'warning' | 'success' | 'error' | 'text';
+  color?:
+    | 'primary'
+    | 'secondary'
+    | 'warning'
+    | 'success'
+    | 'error'
+    | 'text';
   icon?: IconName;
   type?: 'text' | 'password' | 'email' | 'number';
   onChange?: () => void;
@@ -51,7 +63,12 @@ export default function InputText({
       )}
       <View style={[styles.inputContainer, radius.input]}>
         {/* <Icon /> */}
-        {icon && <MaterialCommunityIcons name={icon} style={[styles.icon]} />}
+        {icon && (
+          <MaterialCommunityIcons
+            name={icon}
+            style={[styles.icon]}
+          />
+        )}
         <TextInput
           style={[styles.textInput]}
           selectionColor={colors[color]}
@@ -68,8 +85,12 @@ export default function InputText({
           onEndEditing={() => {
             validate ? setMsg(msg) : setMsg('');
           }}
-          autoCapitalize={type === 'password' ? 'none' : 'sentences'} // Disable auto-capitalization for passwords and emails
-          autoComplete={type === 'password' ? 'password' : 'off'} // Enable password autocomplete
+          autoCapitalize={
+            type === 'password' ? 'none' : 'sentences'
+          } // Disable auto-capitalization for passwords and emails
+          autoComplete={
+            type === 'password' ? 'password' : 'off'
+          } // Enable password autocomplete
         ></TextInput>
       </View>
       <View style={{ paddingLeft: 10 }}>

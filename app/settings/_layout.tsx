@@ -29,7 +29,11 @@ export default function Layout() {
         options={{
           title: 'Profile',
           tabBarIcon: ({ color, size }) => (
-            <MaterialIcons name="person" color={color} size={size} />
+            <MaterialIcons
+              name="person"
+              color={color}
+              size={size}
+            />
           ),
         }}
       />
@@ -38,7 +42,11 @@ export default function Layout() {
         options={{
           title: 'Settings',
           tabBarIcon: ({ color, size }) => (
-            <MaterialIcons name="settings" color={color} size={size} />
+            <MaterialIcons
+              name="settings"
+              color={color}
+              size={size}
+            />
           ),
         }}
       />

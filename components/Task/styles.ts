@@ -1,10 +1,18 @@
 import { Theme } from '@/context/ThemeProvider';
 import { StyleSheet } from 'react-native';
 
-const styles = (theme: Theme, completed: boolean, due?: string) => {
+const styles = (
+  theme: Theme,
+  completed: boolean,
+  due?: string
+) => {
   const colors = theme.colors;
-  let color: 'surface' | 'secondary' | 'warning' | 'success' | 'error' =
-    'surface';
+  let color:
+    | 'surface'
+    | 'secondary'
+    | 'warning'
+    | 'success'
+    | 'error' = 'surface';
   const date = new Date(due ? due : '').getTime();
 
   if (completed) color = 'success';

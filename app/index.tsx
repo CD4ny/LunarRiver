@@ -37,7 +37,6 @@ export default function Index() {
           Get Started!
         </Button>
       </View>
-
     </View>
   );
 }

@@ -1,5 +1,8 @@
 // import { Colors } from "@/constants/Colors";
-import { ThemeProvider, useTheme } from '@/context/ThemeProvider';
+import {
+  ThemeProvider,
+  useTheme,
+} from '@/context/ThemeProvider';
 import { Stack } from 'expo-router';
 import { useEffect } from 'react';
 import { StatusBar } from 'react-native';
@@ -21,12 +24,12 @@ function MainStack() {
       screenOptions={{
         //   headerBackVisible: true,
         headerShown: false,
-        statusBarTranslucent:true,
-        statusBarStyle:'auto',
-        statusBarBackgroundColor:'#0000',
-        navigationBarColor:'#0000',
-        navigationBarTranslucent:true,
-        
+        statusBarTranslucent: true,
+        statusBarStyle: 'auto',
+        statusBarBackgroundColor: '#0000',
+        navigationBarColor: '#0000',
+        navigationBarTranslucent: true,
+
         // headerTintColor: colors.text,
       }}
     >

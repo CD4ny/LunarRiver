@@ -16,9 +16,13 @@ export default function Task(props: ITask) {
   return (
     <View style={[style.card, radius.card]}>
       <Text style={style.title}>{props.title}</Text>
-      <Text style={style.description}>{props.description}</Text>
+      <Text style={style.description}>
+        {props.description}
+      </Text>
       <View style={style.footer}>
-        <Text>{props.completed ? 'Completada' : 'Pendiente'}</Text>
+        <Text>
+          {props.completed ? 'Completada' : 'Pendiente'}
+        </Text>
         <Text>{props.dueDate}</Text>
       </View>
     </View>

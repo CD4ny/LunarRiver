@@ -18,11 +18,9 @@ export default function Index() {
         flex: 1,
         backgroundColor: colors.background,
         justifyContent: 'flex-start',
-        flexDirection:'column',
-        flexWrap:'wrap'
+        flexDirection: 'column',
+        flexWrap: 'wrap',
       }}
-    >
-
-    </View>
+    ></View>
   );
 }

@@ -19,8 +19,6 @@ export default function Index() {
         backgroundColor: colors.background,
         justifyContent: 'flex-start',
       }}
-    >
-
-    </View>
+    ></View>
   );
 }

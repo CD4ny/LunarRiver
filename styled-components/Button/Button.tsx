@@ -7,7 +7,12 @@ import { useTheme } from '@/context/ThemeProvider';
 interface Props {
   children?: ReactNode;
   variant?: 'filled' | 'outlined';
-  color?: 'primary' | 'secondary' | 'warning' | 'success' | 'error';
+  color?:
+    | 'primary'
+    | 'secondary'
+    | 'warning'
+    | 'success'
+    | 'error';
   onPress?: () => void;
   onLongPress?: () => void;
 }
