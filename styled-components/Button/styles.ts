@@ -9,7 +9,7 @@ const styles = (
 
   return StyleSheet.create({
     button: {
-      width: '100%',
+      // width: '100%',
       paddingVertical: 14,
       borderRadius: 25,
       alignItems: 'center',
@@ -38,7 +38,7 @@ const styles = (
     text: {
       fontSize: 20,
       fontWeight: 'bold',
-      color: colors.text,
+      color: colors.background,
       shadowColor: colors.background,
       shadowOffset: { width: 0, height: 1 },
       shadowOpacity: 0.1,

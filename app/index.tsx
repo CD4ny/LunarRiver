@@ -4,8 +4,9 @@ import tasksJson from '@/assets/fixtures.json';
 import { View, Text, FlatList } from 'react-native';
 import { ITask } from '@/interfaces/Task';
 import Task from '@/components/Task/Task';
-import { Link } from 'expo-router';
+import { Link, useRouter } from 'expo-router';
 import useSafeArea from '@/hooks/useSaveArea';
+import Button from '@/styled-components/Button';
 
 export default function Index() {
   const { theme, isDarkMode, toggleTheme } = useTheme();
@@ -13,27 +14,30 @@ export default function Index() {
   const styles = stylesGlobal(theme);
   const saveArea = useSafeArea();
   const tasks: ITask[] = tasksJson;
-
+  const router = useRouter();
   return (
     <View
       style={[
         {
           flex: 1,
           backgroundColor: colors.background,
-          justifyContent: 'flex-start',
+          justifyContent: 'center',
+          alignItems: 'center',
         },
         saveArea,
       ]}
     >
-      <Link href={'/settings'}>
-        <Text>asdasd</Text>
-      </Link>
-      {/* <FlatList
-        data={tasks}
-        renderItem={({ item }) => <Task {...item} />}
-        keyExtractor={(item) => item.id}
-      />
-        */}
+      <View style={{ margin: 70 }}>
+        <Button
+          onPress={() => {
+            router.navigate('/tasks');
+            // toggleTheme()
+          }}
+        >
+          Get Started!
+        </Button>
+      </View>
+
     </View>
   );
 }
