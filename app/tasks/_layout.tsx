@@ -5,6 +5,7 @@ import radius from '@/styles/borderRadius';
 import { useTheme } from '@/context/ThemeProvider';
 import { View } from 'react-native';
 import shadows from '@/styles/shadow';
+import Button from '@/styled-components/Button';
 
 export default function Layout() {
   const { theme, isDarkMode, toggleTheme } = useTheme();
@@ -13,6 +14,11 @@ export default function Layout() {
   return (
     <Tabs
       screenOptions={{
+        headerTitle: 'ToDo',
+        headerStyle: {
+          backgroundColor: colors.background,
+        },
+        headerTintColor: colors.text,
         tabBarActiveTintColor: colors.primary,
         tabBarInactiveTintColor: colors.surface,
         tabBarStyle: {
@@ -20,25 +26,46 @@ export default function Layout() {
           paddingTop: 5,
           backgroundColor: colors.background,
           borderTopWidth: 0,
-          height: 70,
         },
+        headerRight: () => (
+          <View style={[{ marginHorizontal: 10 }]}>
+            <MaterialIcons
+              name={isDarkMode ? 'light-mode' : 'dark-mode'}
+              color={colors.text}
+              size={24}
+              style={[
+                { backgroundColor: colors.surface },
+                radius.topbarButton,
+              ]}
+              onPress={() => toggleTheme()}
+            />
+          </View>
+        ),
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Profile',
+          title: 'List',
           tabBarIcon: ({ color, size }) => (
-            <MaterialIcons name="person" color={color} size={size} />
+            <MaterialIcons
+              name="check-box"
+              color={color}
+              size={size}
+            />
           ),
         }}
       />
       <Tabs.Screen
-        name="settings"
+        name="add"
         options={{
-          title: 'Settings',
+          title: 'Add',
           tabBarIcon: ({ color, size }) => (
-            <MaterialIcons name="settings" color={color} size={size} />
+            <MaterialIcons
+              name="add"
+              color={color}
+              size={size}
+            />
           ),
         }}
       />

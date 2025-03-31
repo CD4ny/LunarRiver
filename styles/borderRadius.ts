@@ -5,6 +5,11 @@ const radius = StyleSheet.create({
     borderTopEndRadius: 25,
     borderTopStartRadius: 25,
   },
+  topbarButton: {
+    padding: 8,
+    borderRadius: 15,
+    alignItems: 'center',
+  },
   button: {
     padding: 15,
     borderRadius: 25,

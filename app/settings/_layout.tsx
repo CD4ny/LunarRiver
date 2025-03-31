@@ -31,7 +31,6 @@ export default function Layout() {
           tabBarIcon: ({ color, size }) => (
             <MaterialIcons name="person" color={color} size={size} />
           ),
-          sceneStyle: { backgroundColor: '#000' },
         }}
       />
       <Tabs.Screen

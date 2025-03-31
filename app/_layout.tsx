@@ -25,7 +25,8 @@ function MainStack() {
         statusBarStyle:'auto',
         statusBarBackgroundColor:'#0000',
         navigationBarColor:'#0000',
-        navigationBarTranslucent:true
+        navigationBarTranslucent:true,
+        
         // headerTintColor: colors.text,
       }}
     >

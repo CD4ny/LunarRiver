@@ -20,14 +20,7 @@ export default function Index() {
         justifyContent: 'flex-start',
       }}
     >
-      {/* <FlatList
-        data={tasks}
-        renderItem={({ item }) => <Task {...item} />}
-        keyExtractor={(item) => item.id}
-      /> */}
-      {/* {tasksJson.map((i: ITask, key: number) => {
-        return <Task {...i} key={key}></Task>;
-      })} */}
+
     </View>
   );
 }
