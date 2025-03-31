@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "title": "Comprar alimentos para la semana",
+    "description": "Ir al supermercado y comprar frutas, verduras y otros productos básicos.",
+    "category": "Hogar",
+    "completed": false,
+    "dueDate": "2023-10-20"
+  },
+  {
+    "id": "2",
+    "title": "Enviar correo al equipo de trabajo",
+    "description": "Enviar un resumen del proyecto actual al equipo antes de la reunión.",
+    "category": "Trabajo",
+    "completed": true,
+    "dueDate": "2023-10-15"
+  },
+  {
+    "id": "3",
+    "title": "Hacer ejercicio",
+    "description": "Realizar una rutina de cardio durante 30 minutos.",
+    "category": "Salud",
+    "completed": false,
+    "dueDate": "2023-10-18"
+  },
+  {
+    "id": "4",
+    "title": "Leer capítulo 5 del libro",
+    "description": "Continuar con la lectura del libro 'El poder del hábito'.",
+    "category": "Personal",
+    "completed": false,
+    "dueDate": null
+  },
+  {
+    "id": "5",
+    "title": "Llamar a mamá",
+    "description": "Recordar llamar a mamá para saber cómo está.",
+    "category": "Familia",
+    "completed": true,
+    "dueDate": "2023-10-16"
+  },
+  {
+    "id": "6",
+    "title": "Preparar presentación para el cliente",
+    "description": "Terminar la presentación de ventas para el cliente nuevo.",
+    "category": "Trabajo",
+    "completed": false,
+    "dueDate": "2023-10-22"
+  },
+  {
+    "id": "7",
+    "title": "Limpiar el cuarto",
+    "description": "Organizar el escritorio y limpiar el piso.",
+    "category": "Hogar",
+    "completed": false,
+    "dueDate": null
+  },
+  {
+    "id": "8",
+    "title": "Pagar las facturas",
+    "description": "Pagar la factura de electricidad y agua antes de la fecha límite.",
+    "category": "Finanzas",
+    "completed": false,
+    "dueDate": "2023-10-19"
+  }
+]

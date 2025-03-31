@@ -1,6 +1,10 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "module": "commonjs", // o "esnext", dependiendo de tu configuración
+    "target": "es6",
     "strict": true,
     "paths": {
       "@/*": ["./*"]
