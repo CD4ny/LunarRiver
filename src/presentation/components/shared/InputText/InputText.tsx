@@ -1,4 +1,4 @@
-import { useTheme } from '@/src/presentation/context/ThemeProvider';
+import { useTheme } from '@/presentation/context/ThemeProvider';
 import {
   StyleSheet,
   Text,
@@ -6,7 +6,7 @@ import {
   TextInput,
 } from 'react-native';
 import stylesInputText from './styles';
-import radius from '@/src/presentation/styles/borderRadius';
+import radius from '@/presentation/styles/borderRadius';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { useState } from 'react';
 

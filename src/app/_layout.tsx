@@ -1,11 +1,5 @@
-// import { Colors } from "@/constants/Colors";
-import {
-  ThemeProvider,
-  useTheme,
-} from '@/src/presentation/context/ThemeProvider';
+import { ThemeProvider } from '@/presentation/context/ThemeProvider';
 import { Stack } from 'expo-router';
-import { useEffect } from 'react';
-import { StatusBar } from 'react-native';
 
 export default function RootLayout() {
   return (
@@ -16,9 +10,6 @@ export default function RootLayout() {
 }
 
 function MainStack() {
-  const { theme, isDarkMode, toggleTheme } = useTheme();
-  const colors = theme.colors;
-
   return (
     <Stack
       screenOptions={{
@@ -33,7 +24,7 @@ function MainStack() {
         // headerTintColor: colors.text,
       }}
     >
-      <Stack.Screen name="index" />
+      {/* <Stack.Screen name="index" /> */}
     </Stack>
   );
 }

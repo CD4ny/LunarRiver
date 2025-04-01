@@ -1,9 +1,8 @@
-import radius from '@/src/presentation/styles/borderRadius';
-import { Children, ReactNode } from 'react';
-import { View, Text, Pressable } from 'react-native';
+import { ReactNode } from 'react';
+import { Text, Pressable } from 'react-native';
 import styles from './styles';
-import { useTheme } from '@/src/presentation/context/ThemeProvider';
-
+import { useTheme } from '@/presentation/context/ThemeProvider';
+import radius from '@/presentation/styles/borderRadius';
 interface Props {
   children?: ReactNode;
   variant?: 'filled' | 'outlined';
@@ -19,13 +18,10 @@ interface Props {
 
 export default function Button({
   children,
-  variant,
   color = 'primary',
   onPress,
-  onLongPress,
 }: Props) {
-  const { theme, isDarkMode, toggleTheme } = useTheme();
-  const colors = theme.colors;
+  const { theme } = useTheme();
   const style = styles(theme, color);
   return (
     <Pressable

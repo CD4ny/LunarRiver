@@ -1,10 +1,9 @@
-// src/context/ThemeContext.tsx
+import { Light, Dark } from '@/utils/constants/Colors';
 import React, {
   createContext,
   useContext,
   useState,
 } from 'react';
-import { Light, Dark } from '@/src/utils/constants/Colors';
 
 export type Theme = {
   colors: typeof Light | typeof Dark;

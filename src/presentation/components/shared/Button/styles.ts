@@ -1,4 +1,4 @@
-import { Theme } from '@/src/presentation/context/ThemeProvider';
+import { Theme } from '@/presentation/context/ThemeProvider';
 import { StyleSheet, ViewStyle } from 'react-native';
 
 const styles = (
