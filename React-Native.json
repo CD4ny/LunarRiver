@@ -2,6 +2,7 @@
   "barrel": { "index.ts": "" },
   "arch": {
     "src": {
+      "assets": {},
       "app": {
         "navigation": {
           "stacks": {},
