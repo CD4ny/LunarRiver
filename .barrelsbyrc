@@ -1,0 +1,14 @@
+{
+  "directory": [
+    "src"
+  ],
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "**/index.ts"
+  ],
+  "entry": "index.ts",
+  "exportDefault": true,
+  "delete": true,
+  "location": "below"
+}
