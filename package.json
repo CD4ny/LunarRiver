@@ -12,7 +12,9 @@
     "lint": "expo lint",
     "lint-code": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write . \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "lint-and-fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+    "lint-and-fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "create-arch": "node ./scripts/archBuilder.js",
+    "update-barrel": "node ./scripts/barrelUpdate.js"
   },
   "jest": {
     "preset": "jest-expo"

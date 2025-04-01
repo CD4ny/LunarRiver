@@ -1,0 +1,63 @@
+.
+├── app
+│   ├── index.tsx
+│   ├── _layout.tsx
+│   ├── settings
+│   │   ├── index.tsx
+│   │   ├── _layout.tsx
+│   │   └── settings.tsx
+│   └── tasks
+│       ├── add.tsx
+│       ├── index.tsx
+│       └── _layout.tsx
+├── app.json
+├── assets
+│   ├── fixtures.json
+│   ├── fonts
+│   │   └── SpaceMono-Regular.ttf
+│   └── images
+│       ├── adaptive-icon.png
+│       ├── favicon.png
+│       ├── icon.png
+│       ├── partial-react-logo.png
+│       ├── react-logo@2x.png
+│       ├── react-logo@3x.png
+│       ├── react-logo.png
+│       └── splash-icon.png
+├── components
+│   ├── index.ts
+│   ├── Task
+│   │   ├── index.ts
+│   │   ├── styles.ts
+│   │   └── Task.tsx
+│   └── ui
+├── constants
+│   └── Colors.ts
+├── context
+│   └── ThemeProvider.tsx
+├── expo-env.d.ts
+├── hooks
+│   └── useSaveArea.ts
+├── interfaces
+│   └── Task.ts
+├── package.json
+├── README.md
+├── remover.sh
+├── startingArch.txt
+├── styled-components
+│   ├── Button
+│   │   ├── Button.tsx
+│   │   ├── index.ts
+│   │   └── styles.ts
+│   └── InputText
+│       ├── index.ts
+│       ├── InputText.tsx
+│       └── styles.ts
+├── styles
+│   ├── borderRadius.ts
+│   ├── globals.ts
+│   └── shadow.ts
+├── tsconfig.json
+└── yarn.lock
+
+18 directories, 43 files

@@ -1,0 +1,89 @@
+{
+  "barrel": { "index.ts": "" },
+  "arch": {
+    "src": {
+      "app": {
+        "navigation": {
+          "stacks": {},
+          "tabs": {},
+          "utils": {}
+        }
+      },
+      "generic": {
+        "domain": {
+          "entities": {
+            "Entity.ts": ""
+          },
+          "repositories": {
+            "Repository.ts": ""
+          }
+        },
+        "application": {
+          "use-cases": {
+            "CreateEntityUseCase.ts": "",
+            "UpdateEntityUseCase.ts": "",
+            "DeleteEntityUseCase.ts": "",
+            "GetEntityUseCase.ts": ""
+          },
+          "services": {
+            "EntityService.ts": ""
+          }
+        },
+        "infrastructure": {
+          "database": {
+            "TypeORMEntityRepository.ts": ""
+          },
+          "api": {
+            "EntityAPI.ts": ""
+          }
+        },
+        "presentation": {
+          "components": {
+            "EntityItem.tsx": "",
+            "EntityForm.tsx": "",
+            "EntityList.tsx": ""
+          },
+          "screens": {
+            "EntityDetailScreen.tsx": "",
+            "EntityListScreen.tsx": "",
+            "EntitySettingsScreen.tsx": ""
+          }
+        }
+      },
+      "core": {
+        "domain": {
+          "entities": {},
+          "repositories": {}
+        },
+        "application": {
+          "use-cases": {},
+          "services": {}
+        }
+      },
+      "adapters": {
+        "database": {
+          "typeorm": {}
+        },
+        "http": {
+          "api": {}
+        },
+        "external-services": {}
+      },
+      "config": {
+        "environment": {}
+      },
+      "presentation": {
+        "components": {
+          "shared": {},
+          "screens": {}
+        },
+        "hooks": {},
+        "context": {}
+      },
+      "utils": {
+        "helpers": {},
+        "constants": {}
+      }
+    }
+  }
+}
