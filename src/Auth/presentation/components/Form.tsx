@@ -1,9 +1,9 @@
 import { View, Text, Animated } from 'react-native';
-import { useTheme } from '@/Core/presentation/context/ThemeProvider';
-import styles from '@/Core/presentation/styles/globals';
-import radius from '@/Core/presentation/styles/borderRadius';
-import InputText from '@/Core/presentation/components/shared/InputText/InputText';
-import Button from '@/Core/presentation/components/shared/Button/Button';
+import { useTheme } from '@Core/presentation/context/ThemeProvider';
+import styles from '@Core/presentation/styles/globals';
+import radius from '@Core/presentation/styles/borderRadius';
+import InputText from '@Core/presentation/components/shared/InputText/InputText';
+import Button from '@Core/presentation/components/shared/Button/Button';
 import { Link } from 'expo-router';
 import { useRef } from 'react';
 import { useAvoidEffect } from '../hooks/useAvoid';
@@ -77,13 +77,12 @@ export default function AuthForm() {
               color: colors.error,
               fontWeight: 'bold',
             }}
-            href={'/'}
+            href={'/+not-found'}
           >
             Here
           </Link>
         </Text>
       </View>
-      Core/
     </>
   );
 }

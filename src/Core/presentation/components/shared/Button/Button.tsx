@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
 import { Text, Pressable } from 'react-native';
 import styles from './styles';
-import { useTheme } from '@/presentation/context/ThemeProvider';
-import radius from '@/presentation/styles/borderRadius';
+import { useTheme } from '@Core/presentation/context/ThemeProvider';
+import radius from '@Core/presentation/styles/borderRadius';
 interface Props {
   children?: ReactNode;
   variant?: 'filled' | 'outlined';

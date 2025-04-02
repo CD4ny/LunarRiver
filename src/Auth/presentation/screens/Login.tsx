@@ -1,7 +1,7 @@
 import { View } from 'react-native';
 import AuthForm from '../components/Form';
-import styles from '@/Core/presentation/styles/globals';
-import { useTheme } from '@/Core/presentation/context/ThemeProvider';
+import styles from '@Core/presentation/styles/globals';
+import { useTheme } from '@Core/presentation/context/ThemeProvider';
 
 export default function Login() {
   const { theme } = useTheme();

@@ -1,4 +1,4 @@
-import { Light, Dark } from '@/utils/constants/Colors';
+import { Light, Dark } from '@/Core/utils/constants/Colors';
 import React, {
   createContext,
   useContext,

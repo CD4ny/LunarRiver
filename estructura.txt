@@ -1,0 +1,142 @@
+.
+├── android
+│   ├── app
+│   │   └── src
+│   │       └── main
+│   │           ├── java
+│   │           │   └── com
+│   │           │       └── cd4ny
+│   │           └── res
+│   └── gradle
+├── app.json
+├── babel.config.js
+├── estructura.txt
+├── expo-env.d.ts
+├── ios
+│   ├── LunarRiver
+│   │   └── Images.xcassets
+│   └── LunarRiver.xcodeproj
+│       ├── project.xcworkspace
+│       └── xcshareddata
+├── package.json
+├── React-Native.json
+├── README.md
+├── remover.sh
+├── scripts
+│   ├── archBuilder.js
+│   └── barrelUpdate.js
+├── src
+│   ├── app
+│   │   ├── index.tsx
+│   │   ├── _layout.tsx
+│   │   └── +not-found.tsx
+│   ├── Auth
+│   │   ├── application
+│   │   │   ├── services
+│   │   │   │   └── EntityService.ts
+│   │   │   └── use-cases
+│   │   │       ├── CreateEntityUseCase.ts
+│   │   │       ├── DeleteEntityUseCase.ts
+│   │   │       ├── GetEntityUseCase.ts
+│   │   │       └── UpdateEntityUseCase.ts
+│   │   ├── domain
+│   │   │   ├── entities
+│   │   │   │   └── Login.ts
+│   │   │   └── repositories
+│   │   │       └── Repository.ts
+│   │   ├── infrastructure
+│   │   │   ├── api
+│   │   │   │   └── EntityAPI.ts
+│   │   │   └── database
+│   │   │       └── TypeORMEntityRepository.ts
+│   │   └── presentation
+│   │       ├── components
+│   │       │   └── Form.tsx
+│   │       ├── hooks
+│   │       │   └── useAvoid.ts
+│   │       ├── screens
+│   │       │   └── Login.tsx
+│   │       └── styles
+│   │           └── styles.ts
+│   ├── Config
+│   │   └── environment
+│   ├── Core
+│   │   ├── application
+│   │   │   ├── services
+│   │   │   └── use-cases
+│   │   ├── assets
+│   │   │   ├── fixtures.json
+│   │   │   ├── fonts
+│   │   │   │   └── SpaceMono-Regular.ttf
+│   │   │   └── images
+│   │   │       ├── adaptive-icon.png
+│   │   │       ├── favicon.png
+│   │   │       ├── icon.png
+│   │   │       ├── partial-react-logo.png
+│   │   │       ├── react-logo@2x.png
+│   │   │       ├── react-logo@3x.png
+│   │   │       ├── react-logo.png
+│   │   │       └── splash-icon.png
+│   │   ├── domain
+│   │   │   ├── entities
+│   │   │   └── repositories
+│   │   ├── infrastructure
+│   │   │   ├── api
+│   │   │   └── database
+│   │   ├── presentation
+│   │   │   ├── components
+│   │   │   │   └── shared
+│   │   │   │       ├── Button
+│   │   │   │       │   ├── Button.tsx
+│   │   │   │       │   └── styles.ts
+│   │   │   │       └── InputText
+│   │   │   │           ├── InputText.tsx
+│   │   │   │           └── styles.ts
+│   │   │   ├── context
+│   │   │   │   └── ThemeProvider.tsx
+│   │   │   ├── hooks
+│   │   │   │   └── useSaveArea.ts
+│   │   │   └── styles
+│   │   │       ├── borderRadius.ts
+│   │   │       ├── globals.ts
+│   │   │       └── shadow.ts
+│   │   ├── tests
+│   │   └── utils
+│   │       ├── constants
+│   │       │   └── Colors.ts
+│   │       └── helpers
+│   ├── index.ts
+│   └── Task
+│       ├── application
+│       │   ├── services
+│       │   │   └── EntityService.ts
+│       │   └── use-cases
+│       │       ├── CreateEntityUseCase.ts
+│       │       ├── DeleteEntityUseCase.ts
+│       │       ├── GetEntityUseCase.ts
+│       │       └── UpdateEntityUseCase.ts
+│       ├── domain
+│       │   ├── entities
+│       │   │   ├── Entity.ts
+│       │   │   └── Task.ts
+│       │   └── repositories
+│       │       └── Repository.ts
+│       ├── infrastructure
+│       │   ├── api
+│       │   │   └── EntityAPI.ts
+│       │   └── database
+│       │       └── TypeORMEntityRepository.ts
+│       └── presentation
+│           ├── components
+│           │   └── Task.tsx
+│           ├── screens
+│           │   ├── EntityDetailScreen.tsx
+│           │   ├── EntityListScreen.tsx
+│           │   └── EntitySettingsScreen.tsx
+│           └── styles
+│               └── styles.ts
+├── startingArch.txt
+├── tsconfig.json
+└── yarn.lock
+
+75 directories, 65 files

@@ -1,23 +1,27 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "noUnusedLocals": true, // Advierte sobre variables locales no utilizadas
-    "noUnusedParameters": true, // Advierte sobre parámetros no utilizados
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "module": "commonjs", // o "esnext", dependiendo de tu configuración
+    "module": "commonjs",
     "target": "es6",
     "strict": true,
     "baseUrl": "./src",
     "paths": {
       "@/*": ["*"],
-      "@Auth/*": ["src/Auth/*"]
+      "@Auth/*": ["./Auth/*"],
+      "@Core/*": ["./Core/*"],
+      "@Task/*": ["./Task/*"],
+      "@Login": ["./src/Login"]
     }
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "expo-env.d.ts",
+    "scripts/feature.js"
   ]
 }

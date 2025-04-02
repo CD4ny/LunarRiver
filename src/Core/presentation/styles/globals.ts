@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { Theme } from '@/presentation/context/ThemeProvider';
+import { Theme } from '@Core/presentation/context/ThemeProvider';
 
 const stylesGlobal = (theme: Theme) => {
   const colors = theme.colors;
