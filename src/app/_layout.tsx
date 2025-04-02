@@ -1,4 +1,4 @@
-import { ThemeProvider } from '@/presentation/context/ThemeProvider';
+import { ThemeProvider } from '@/Core/presentation/context/ThemeProvider';
 import { Stack } from 'expo-router';
 
 export default function RootLayout() {

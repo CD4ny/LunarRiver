@@ -1,9 +1,9 @@
 import { View, Text } from 'react-native';
 import { ITask } from '@/Task/domain/entities/Task';
-import stylesGlobal from '@/presentation/styles/globals';
-import { useTheme } from '@/presentation/context/ThemeProvider';
+import stylesGlobal from '@/Core/presentation/styles/globals';
+import { useTheme } from '@/Core/presentation/context/ThemeProvider';
 import styles from '@/Task/presentation/styles/styles';
-import radius from '@/presentation/styles/borderRadius';
+import radius from '@/Core/presentation/styles/borderRadius';
 export default function Task(props: ITask) {
   const { theme, isDarkMode, toggleTheme } = useTheme();
   const colors = theme.colors;

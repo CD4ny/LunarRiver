@@ -1,16 +1,9 @@
-import {
-  View,
-  Text,
-  KeyboardAvoidingView,
-  Platform,
-  Animated,
-  Keyboard,
-} from 'react-native';
-import { useTheme } from '@/presentation/context/ThemeProvider';
-import styles from '@/presentation/styles/globals';
-import radius from '@/presentation/styles/borderRadius';
-import InputText from '@/presentation/components/shared/InputText/InputText';
-import Button from '@/presentation/components/shared/Button/Button';
+import { View, Text, Animated } from 'react-native';
+import { useTheme } from '@/Core/presentation/context/ThemeProvider';
+import styles from '@/Core/presentation/styles/globals';
+import radius from '@/Core/presentation/styles/borderRadius';
+import InputText from '@/Core/presentation/components/shared/InputText/InputText';
+import Button from '@/Core/presentation/components/shared/Button/Button';
 import { Link } from 'expo-router';
 import { useRef } from 'react';
 import { useAvoidEffect } from '../hooks/useAvoid';
@@ -59,7 +52,6 @@ export default function AuthForm() {
           icon="account"
           placeholder="User"
         ></InputText>
-        useEffect,
         <InputText
           icon="key"
           placeholder="Password"
@@ -81,16 +73,17 @@ export default function AuthForm() {
         >
           Forgot password? click{' '}
           <Link
-            href={'/+not-found'}
             style={{
               color: colors.error,
               fontWeight: 'bold',
             }}
+            href={'/'}
           >
             Here
           </Link>
         </Text>
       </View>
+      Core/
     </>
   );
 }
