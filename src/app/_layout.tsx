@@ -24,7 +24,7 @@ function MainStack() {
         // headerTintColor: colors.text,
       }}
     >
-      {/* <Stack.Screen name="index" /> */}
+      <Stack.Screen name="index" options={{}} />
     </Stack>
   );
 }

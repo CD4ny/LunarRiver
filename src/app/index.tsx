@@ -1,8 +1,5 @@
-import { View, Text } from 'react-native';
-export default function index() {
-  return (
-    <View>
-      <Text>index</Text>
-    </View>
-  );
+import Login from '@/Auth/presentation/screens/Login';
+
+export default function Screen() {
+  return <Login />;
 }
