@@ -51,7 +51,7 @@ export default function InputText({
   onChange,
 }: Props) {
   const [message, setMsg] = useState(msg);
-  const { theme, isDarkMode, toggleTheme } = useTheme();
+  const { theme } = useTheme();
   const styles = stylesInputText(theme, color, background);
   const colors = theme.colors;
   return (

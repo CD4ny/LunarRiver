@@ -1,9 +1,5 @@
-import { Text, View } from 'react-native';
+import NotFound from '@Core/presentation/components/shared/NotFound/NotFound';
 
-const notFound = () => (
-  <View>
-    <Text>This is not the way</Text>
-  </View>
-);
+const notFound = () => <NotFound />;
 
 export default notFound;

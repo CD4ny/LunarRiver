@@ -14,7 +14,7 @@
       "@Auth/*": ["./Auth/*"],
       "@Core/*": ["./Core/*"],
       "@Task/*": ["./Task/*"],
-      "@Login": ["./src/Login"]
+      "@Assets/*": ["./assets*"]
     }
   },
   "include": [

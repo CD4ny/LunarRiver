@@ -20,13 +20,16 @@ export default function Button({
   children,
   color = 'primary',
   onPress,
+  onLongPress,
 }: Props) {
   const { theme } = useTheme();
   const style = styles(theme, color);
   return (
     <Pressable
+      accessibilityRole="button"
       style={[style.button, style.fill, radius.button]}
       onPress={onPress}
+      onLongPress={onLongPress}
     >
       <Text style={[style.text]}>{children}</Text>
     </Pressable>

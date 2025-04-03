@@ -11,7 +11,7 @@ module.exports = function (api) {
             '@Core/*': './Core/*',
             '@Auth/*': './Auth/*',
             '@Task/*': './Task/*',
-            '@Assets/*': './Core/assets/*',
+            '@Assets/*': './assets/*',
           },
         },
       ],
